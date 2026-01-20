@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมาชิกพรรค - พรรคนับหนึ่ง</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">YSP Council | พรรคนับหนึ่ง</div>
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าหลัก</a></li>
+            <li><a href="policies.html">นโยบาย</a></li>
+            <li><a href="members.html" class="active">สมาชิกพรรค</a></li>
+        </ul>
+    </nav>
+
+    <section class="members-section">
+        <h1 class="section-title">ทีมงานพรรคนับหนึ่ง</h1>
+        <p class="subtitle">พวกเราพร้อมรับใช้เพื่อนพี่น้องชาวยโสธรพิทยาคม</p>
+
+        <div class="members-grid">
+            <div class="member-card" onclick="openMemberModal(1)">
+                <div class="member-img">
+                    <img src="https://via.placeholder.com/150" alt="หัวหน้าพรรค">
+                </div>
+                <h3>นาย ก. ไก่</h3>
+                <p>หัวหน้าพรรค</p>
+                <button class="btn-small">ดูรายละเอียด</button>
+            </div>
+
+            <div class="member-card" onclick="openMemberModal(2)">
+                <div class="member-img"><img src="https://via.placeholder.com/150" alt="สมาชิก"></div>
+                <h3>นางสาว ข. ไข่</h3>
+                <p>รองหัวหน้าพรรค</p>
+                <button class="btn-small">ดูรายละเอียด</button>
+            </div>
+
+            <div class="member-card" onclick="openMemberModal(3)">
+                <div class="member-img"><img src="https://via.placeholder.com/150" alt="สมาชิก"></div>
+                <h3>ชื่อ สมาชิก</h3>
+                <p>ฝ่ายประชาสัมพันธ์</p>
+                <button class="btn-small">ดูรายละเอียด</button>
+            </div>
+            <div class="member-card" onclick="openMemberModal(10)">
+                <div class="member-img"><img src="https://via.placeholder.com/150" alt="สมาชิก"></div>
+                <h3>ชื่อ สมาชิก</h3>
+                <p>ฝ่ายสวัสดิการ</p>
+                <button class="btn-small">ดูรายละเอียด</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Profile">
+                <h2 id="modal-name">ชื่อ-สกุล</h2>
+                <h3 id="modal-role" style="color: var(--primary-blue);">ตำแหน่ง</h3>
+                <p id="modal-desc">คติประจำใจ หรือ รายละเอียดเพิ่มเติม...</p>
+                <div class="modal-social">
+                    <a href="#" id="modal-ig" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" id="modal-fb" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
